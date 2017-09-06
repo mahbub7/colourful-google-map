@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>mahbubur-rahman use w3 schools map</title>
+
+        <link href="style.css" rel="stylesheet">
+      
+
+
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+      
+     
+          <div id="gmap" style="height:500px; width:100%;"></div>
+           
+
+	E531C7	 <script src="http://maps.googleapis.com/maps/api/js"></script>
+       
+       
+        <!--google map script w3 schools-->
+        <script type="text/javascript">
+            
+              var mapProp = {
+                center:new google.maps.LatLng(23.684994,90.356331),
+                zoom:5,
+                mapTypeId:google.maps.MapTypeId.ROADMAP,
+				styles: [{"featureType":"landscape","stylers":[{"color": "#FCD209" },{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{ "color": "green" }, {"visibility": "on"} ]},{"featureType":"road.arterial","stylers":[{ "color": "#00D918" }, {"visibility": "on"} ]},{"featureType":"road.local","stylers":[{ "color": "#f9bf3b" },{"visibility":"off"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{ "color": "#f9bf3b" }]},{"featureType":"water","elementType":"geometry","stylers":[{ "color": "#ff0000" }, {"visibility": "on"} ]}]
+          
+              };
+              new google.maps.Map(document.getElementById("gmap"),mapProp);
+            
+        </script>
+		
+        
+        
+    </body>
+</html>
